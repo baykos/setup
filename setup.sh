@@ -57,6 +57,7 @@ sudo apt-get install -y nodejs
 npm install cheerio
 npm install commander
 npm install express
+npm install restler
 
 
 # Install heroku
