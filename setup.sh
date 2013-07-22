@@ -56,5 +56,6 @@ sudo apt-get install -y nodejs
 # install additional node libraries
 npm install cheerio
 npm install commander
+npm install express
 
 
