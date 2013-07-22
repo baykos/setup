@@ -16,9 +16,6 @@ nvm use v0.10.12
 # http://jshint.com/
 npm install -g jshint
 
-npm install cheerio
-npm install commander
-
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
@@ -43,4 +40,21 @@ ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
+
+
+# install node and nodejs
+sudo apt-get update
+# Install a special package
+sudo apt-get install -y python-software-properties python g++ make
+# Add a new repository for apt-get to search
+sudo add-apt-repository ppa:chris-lea/node.js
+# Update apt-get’s knowledge of which packages are where
+sudo apt-get update
+# Now install nodejs and npm
+sudo apt-get install -y nodejs
+
+# install additional node libraries
+npm install cheerio
+npm install commander
+
 
