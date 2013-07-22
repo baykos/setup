@@ -42,7 +42,7 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 
-# install node and nodejs
+# Install node and nodejs
 sudo apt-get update
 # Install a special package
 sudo apt-get install -y python-software-properties python g++ make
@@ -53,9 +53,20 @@ sudo apt-get update
 # Now install nodejs and npm
 sudo apt-get install -y nodejs
 
-# install additional node libraries
+# Install additional node.js libraries
 npm install cheerio
 npm install commander
 npm install express
+
+
+# Install heroku
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+which git
+which heroku
+# 2) Login and set up your SSH keys
+heroku login
+ssh-keygen -t rsa
+heroku keys:add
+
 
 
